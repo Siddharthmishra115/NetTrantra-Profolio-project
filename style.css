@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Patua+One&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background: rgb(9, 50, 56);
+    
+}
+
+
+.container {
+    padding: 0px 10px;
+}
+
+
+.container nav h1 {
+    font-size: 35px;
+    color: #78b8c7;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.headline{
+    font-family: 'Aref Ruqaa Ink', serif;
+    padding-bottom: 24px;
+    font-size: 50px;
+    color: #f44336;
+    margin-left: 90px;
+    
+    
+}
+.nav-bar {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 24px;
+}
+
+
+.nav-bar ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+#nav-content a {
+    color: rgb(189, 218, 207);
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    position: relative;
+    font-size: 21px;
+}
+
+.intro{
+    /* text-align: center; */
+    /* position: relative; */
+    padding: 100px 0;
+    font-family: 'Caveat', cursive;
+    color: rgb(119 201 152);
+    font-size: 27px;
+}
+
+.fancy-1{
+    margin-right: 49%;
+    padding-top: 30px;
+    padding-left: 204px;
+}
+
+
+
+.fancy-2{
+    float: right;
+    margin-right: 183px;
+    margin-top: -132px;
+}
+.intro span {
+    color: rgb(168, 21, 58);
+    
+}
+
+#nav-content a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+#nav-content a:hover::after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+
+}
+
+
+/* -----------------------about------------- */
+
+#about{
+    margin-top: 130px;
+}
+#mainabout{
+    font-family: 'Pacifico', cursive;
+    color: rgb(159 153 80);
+    justify-content: center;
+    text-align: center;
+    font-size: 80px;
+}
+#mainabout span{
+    font-family: 'Pacifico', cursive;
+    color: rgb(165 88 88);
+   
+}
+.container-about{
+    display: flex;
+}
+
+.about-text{
+    font-size: 15px;
+    font-family: 'Noto Sans Mono', monospace;
+    /* color: rgb(11, 122, 89); */
+    flex-basis: 85%;
+    margin-top: 60px;
+    /* margin-left: 90px; */
+}
+
+
+.sub-tilte{
+    /* color: bisque; */
+    margin-left: 0px;
+    margin-top: 25px;
+    margin-left: 90px;
+
+}
+.sub-tilte h2{
+    color: bisque;
+
+}
+.sub-tilte p{
+    color: bisque;
+
+}
+
+.others{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 16px;
+}
+
+.others p{
+    
+    margin-top: 17px;
+    margin-right: 30px;
+    font-size: 23px;
+}
+
+.links{
+    display: flex;
+    padding-top: 30px;
+}
+.links p{
+    font-size: 20px;
+    padding: 29px 10px;
+}
+
+.links a{
+    color: #ababab;
+    font-size: 35px;
+    padding: 23px;
+    padding-right: 50px;
+    transition: transform 0.5s;
+}
+
+.links a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+
+
+
+/* -----------------Skills------------- */
+
+#skills {
+    font-size: 15px;
+    font-family: 'Noto Sans Mono', monospace;
+    color: bisque;
+    flex-basis: 85%;
+    margin-top: 130px;
+    /* margin-left: 90px; */
+}
+#sec1{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: -125px;
+    margin-top: 9px;
+    margin-left: -66px
+}
+
+/* ------------------project------------- */
+
+#project{
+    margin-top: 130px;
+
+}
+
+.project-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img{
+    width: 80%;
+    border-radius: 10px;
+    display: block;
+    margin-left: 42px;
+    transition: transfom 0.5s;
+}
+
+.layer{
+    width: 80%;
+    height: 0%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 42px;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    color: bisque; 
+    font-size: 14px;   
+    transition: height 0.4s;
+}
+
+.layer h3{
+    font-weight: 1000;
+    margin-bottom: 20px;
+}
+
+.layer a{
+    margin-top: 80px;
+    color: #050102;
+    text-decoration: none;
+    font-size: 22px;
+    line-height: 16px;
+    width: 50px;
+    height: 32px;
+    text-align: center;
+    display: block;
+    border: 1px solid black;
+    padding: 10px 30px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.5s;
+    
+    /* border-radius: 50%; */
+}
+
+/* .work:hover img{
+    transform: scale(1.1);
+} */
+.work:hover .layer{
+    height: 100%;
+}
+
+.layer a:hover{
+    background: #ff004f;
+    color: black;
+}
+
+/* --------------contact----------- */
+
+#contact{
+    margin-top: 130px;
+}
+
+.contact-right{
+    padding: 30px;
+    width: 800px;
+    margin: 12px 90px;
+    font-size: 30px;
+    
+}
+
+#btn{
+    font-size: 23px;
+    font-weight: bolder;
+    padding: 23px;
+    background: black;
+    color: #ff004f;
+    border: 1px solid black;
+    padding: 10px 30px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.5s;
+}
+#btn:hover{
+    background: #ff004f;
+    color: black;
+}
+
+
+
+form input, form textarea{
+    width: 800px;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background: #262626;
+    font-size: 20px;
+    margin-top: 20px
+}
